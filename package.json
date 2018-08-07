@@ -1,4 +1,6 @@
 {
+  "name": "minimal-react-redux-router-boilerplate",
+  "version": "0.0.1",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -12,10 +14,16 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.3.0",
+    "install": "^0.12.1",
+    "npm": "^6.3.0",
+    "rimraf": "^2.6.2",
     "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "history": "^4.7.2",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.6",
