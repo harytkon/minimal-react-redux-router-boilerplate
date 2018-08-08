@@ -18,6 +18,7 @@ const reducers = combineReducers({
   // key: reducer
 });
 
+
 const middlewares = applyMiddleware(reduxPromise, logger);
 
 // render an instance of the component in the DOM
