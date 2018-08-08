@@ -10,7 +10,7 @@ import {
   Redirect
 } from 'react-router-dom';
 import { createHistory as history } from 'history';
-// import App from './app';
+import App from './app';
 
 // import '../assets/stylesheets/application.scss';
 
@@ -26,6 +26,7 @@ ReactDOM.render(
     <Router history={history}>
       <Switch>
         <Route path="/redirect" render={() => <Redirect from="/redirect" to="/" />} />
+        <Route path="/" component={App} />
       </Switch>
     </Router>
   </Provider>,

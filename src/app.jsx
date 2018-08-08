@@ -1,15 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function App({ test }) {
+export default function App() {
   return (
     <div>
-      {test}
-    </div>);
+      { 'Hello world' }
+    </div>
+  );
 }
-App.defaultProps = {
-  test: "Hello world",
-};
-App.propTypes = {
-  test: PropTypes.string,
-};
