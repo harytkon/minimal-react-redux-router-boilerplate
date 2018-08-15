@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import reduxPromise from 'redux-promise';
-import logger from 'redux-logger';
+import { createStore } from 'redux';
 import {
   BrowserRouter as Router,
   Route, Switch,
@@ -11,19 +9,14 @@ import {
 } from 'react-router-dom';
 import { createHistory as history } from 'history';
 import App from './app';
+import reducer from './reducer';
 
 // import '../assets/stylesheets/application.scss';
 
-const reducers = combineReducers({
-  // key: reducer
-});
+const store = createStore(reducer);
 
-
-const middlewares = applyMiddleware(reduxPromise, logger);
-
-// render an instance of the component in the DOM
 ReactDOM.render(
-  <Provider store={createStore(reducers, {}, middlewares)}>
+  <Provider store={store}>
     <Router history={history}>
       <Switch>
         <Route path="/redirect" render={() => <Redirect from="/redirect" to="/" />} />

@@ -3,7 +3,7 @@ import {
 } from './actions';
 
 const initialState = {
-  CHECKBOX: false,
+  TEXTBOX: false,
 };
 
 function boilerplate(state = initialState, action) {
