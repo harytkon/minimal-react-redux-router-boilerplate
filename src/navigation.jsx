@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function App() {
+export default function Navigation() {
   return (
     <div>
       <Link to="/input">

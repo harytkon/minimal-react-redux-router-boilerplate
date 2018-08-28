@@ -5,8 +5,8 @@ import TextField from './TextField';
 export default function InputComp() {
   return (
     <div>
-      <TextLabel />
       <TextField />
+      <TextLabel />
     </div>
   );
 }

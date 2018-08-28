@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import { createHistory as history } from 'history';
 import InputComp from './InputComp';
+import Navigation from './Navigation';
 import reducer from './reducer';
 
 // import '../assets/stylesheets/application.scss';
@@ -18,10 +19,13 @@ const store = createStore(reducer);
 ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
-      <Switch>
-        <Route path="/redirect" render={() => <Redirect from="/redirect" to="/" />} />
-        <Route path="/input" component={InputComp} />
-      </Switch>
+      <div>
+        <Navigation />
+        <Switch>
+          <Route path="/redirect" render={() => <Redirect from="/redirect" to="/" />} />
+          <Route path="/input" component={InputComp} />
+        </Switch>
+      </div>
     </Router>
   </Provider>,
   document.getElementById('root')
