@@ -8,7 +8,7 @@ import {
   Redirect
 } from 'react-router-dom';
 import { createHistory as history } from 'history';
-import App from './app';
+import InputComp from './InputComp';
 import reducer from './reducer';
 
 // import '../assets/stylesheets/application.scss';
@@ -20,7 +20,7 @@ ReactDOM.render(
     <Router history={history}>
       <Switch>
         <Route path="/redirect" render={() => <Redirect from="/redirect" to="/" />} />
-        <Route path="/" component={App} />
+        <Route path="/input" component={InputComp} />
       </Switch>
     </Router>
   </Provider>,
