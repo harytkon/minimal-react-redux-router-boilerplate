@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import { createHistory as history } from 'history';
 import InputComp from './InputComp';
+import CheckboxComp from './CheckboxComp';
 import Navigation from './Navigation';
 import reducer from './reducer';
 
@@ -24,6 +25,7 @@ ReactDOM.render(
         <Switch>
           <Route path="/redirect" render={() => <Redirect from="/redirect" to="/" />} />
           <Route path="/input" component={InputComp} />
+          <Route path="/checkbox" component={CheckboxComp} />
         </Switch>
       </div>
     </Router>
