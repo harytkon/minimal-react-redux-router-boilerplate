@@ -7,8 +7,8 @@ export default function Navigation() {
       <Link to="/input">
         Input box
       </Link>
-      <Link to="/checkbox">
-        Check box
+      <Link to="/radiobutton">
+        Radio button
       </Link>
     </div>
   );
