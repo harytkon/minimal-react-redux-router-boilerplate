@@ -1,7 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import TextLabel from './TextLabel';
 
-export default class RadioButtonComp extends React.Component {
+class RadioButtonComp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,3 +45,4 @@ export default class RadioButtonComp extends React.Component {
     );
   }
 }
+export default connect()(RadioButtonComp);
