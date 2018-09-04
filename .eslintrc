@@ -10,7 +10,9 @@
       "linebreak-style": 0
     },
     "env": {
-      "browser": true
+      "browser": true,
+      "node": true,
+      "mocha": true
     },
     "parser": "babel-eslint",
     "parserOptions": {
