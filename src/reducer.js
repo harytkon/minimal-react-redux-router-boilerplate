@@ -3,10 +3,10 @@ import {
 } from './actions';
 
 const initialState = {
-  TEXTBOX: '',
+  text: '',
 };
 
-function boilerplate(state = initialState, action) {
+function reducer(state = initialState, action) {
   switch (action.type) {
     case TEXTBOX:
       return Object.assign({}, state, {
@@ -17,4 +17,4 @@ function boilerplate(state = initialState, action) {
   }
 }
 
-export default boilerplate;
+export default reducer;
