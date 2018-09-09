@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import TextLabel from './TextLabel';
 
 class RadioButtonComp extends React.Component {
   constructor(props) {
@@ -40,7 +39,9 @@ class RadioButtonComp extends React.Component {
             </label>
           </div>
         </form>
-        <TextLabel />
+        <div>
+          { checkbox }
+        </div>
       </div>
     );
   }
