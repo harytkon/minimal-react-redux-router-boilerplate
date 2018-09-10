@@ -13,8 +13,6 @@ import RadioButtonComp from './RadioButtonComp';
 import Navigation from './Navigation';
 import reducer from './reducer';
 
-// import '../assets/stylesheets/application.scss';
-
 const store = createStore(reducer);
 
 ReactDOM.render(

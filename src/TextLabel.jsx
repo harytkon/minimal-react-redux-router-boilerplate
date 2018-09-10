@@ -6,9 +6,7 @@ const TextLabel = (props) => {
   const { text } = props;
   return (
     <div>
-      <div>
-        {text}
-      </div>
+      {text}
     </div>
   );
 };
