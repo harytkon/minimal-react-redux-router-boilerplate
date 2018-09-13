@@ -16,7 +16,6 @@ class RadioButtonComp extends React.Component {
 
   render() {
     const { checkbox } = this.state;
-    console.log(checkbox);
     return (
       <div>
         <form>
