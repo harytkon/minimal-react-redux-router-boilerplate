@@ -9,3 +9,5 @@
 * Run `npm install`
 * Start server `npm start`
 * Open `http://localhost:8080/` in browser
+
+* Run unit tests `npm run test`
